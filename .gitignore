@@ -1,0 +1,24 @@
+# Ignorar dataset
+AgrosGESF/Modelo_Folha/dataset/
+
+# Ignorar arquivos temporários e do sistema
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Ignorar arquivos do VS Code
+.vscode/
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos Python temporários
+__pycache__/
+*.pyc
+*.pyo
+./venv/
+env/
+PythonTorchAmbiente/
