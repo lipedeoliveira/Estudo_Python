@@ -37,7 +37,7 @@ Sets sao eficientes para remover valroes duplicados de iteráveis
 # união | , interseção & , diferença - , diferença simétrica ^
 
 s1 = {1,2,3}
-s2 = {2,3,4,5}
+s2 = {2,2,4,5}
 s3 = s1 | s2 # Une os dois sets, eliminando dados duplicados
 print(s3)
 print("\n")
