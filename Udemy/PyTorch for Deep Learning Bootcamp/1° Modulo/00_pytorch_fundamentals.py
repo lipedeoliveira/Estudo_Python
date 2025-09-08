@@ -72,10 +72,11 @@ to better represent the data
 random_tensor = torch.rand(3,4)
 print(random_tensor)
 
-#ANCHOR Creating a raondom tensor with a similar shape to an image tensor
+#ANCHOR Creating a random tensor with a similar shape to an image tensor
 random_image_size_tensor = torch.rand(size=(3,224,224)) # colour channels(R,GB), height,width
 print(random_image_size_tensor.shape,random_image_size_tensor.ndim)
 # print(random_image_size_tensor)
+
 
 #ANCHOR - Creating tensors of zero and one, it's usefull to create masks
 zero = torch.zeros(size=(3,4))
@@ -91,11 +92,6 @@ print(ones.dtype)
 #ANCHOR: Creating a range of tensor and tensor-like
 one_to_ten = (torch.arange(start=1,end=11,step=1)) #https://docs.pytorch.org/docs/stable/generated/torch.arange.html
 print(one_to_ten)
-
-#Creating tensor like
-#Criando um tensor com o formato/shape igual ao one_to_ten, mas no caso, cheio de zeros
-ten_zeros = torch.zeros_like(input=one_to_ten)
-print(ten_zeros)
 
 #ANCHOR -  Tensor datatypes
     #Float 32 tensor
@@ -119,3 +115,11 @@ print(float_16_tensor)
 
 float_half_tensor = torch.tensor([12.0,15.0,18.0],dtype=torch.float16,device=None)
 print(float_half_tensor)
+
+print(float_16_tensor*float_32_tensor)
+
+int_32_tensor = torch.tensor([3,6,9],dtype=torch.int32)
+print(float_16_tensor*int_32_tensor)
+
+
+### Getting informations from tensor
